@@ -30,7 +30,8 @@ Vue.component('el-cascader', ElCascader)
 
 ## Options
 
-el-cascader
+### el-cascader
+
 | 参数| 说明| 类型| 可选值| 默认值 |
 |--|--|--|--|--|
 |model| 绑定值| string | | |
