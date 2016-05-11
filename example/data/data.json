@@ -1,0 +1,97 @@
+[
+  {
+    "label": "选项A",
+    "submenu": [
+      {
+        "label": "AA"
+      },
+      {
+        "label": "AB"
+      },
+      {
+        "label": "AC"
+      },
+      {
+        "label": "AD"
+      },
+      {
+        "label": "AE"
+      },
+      {
+        "label": "AF"
+      },
+      {
+        "label": "AG"
+      },
+      {
+        "label": "AH"
+      },
+      {
+        "label": "dingding"
+      }
+    ]
+  },
+  {
+    "label": "选项B",
+    "submenu": [
+      {
+        "label": "BA",
+        "submenu": [
+          {
+            "label": "BAA"
+          },
+          {
+            "label": "BAB",
+            "submenu": [
+              {
+                "label": "BABA"
+              },
+              {
+                "label": "BABB"
+              },
+              {
+                "label": "BABC"
+              },
+              {
+                "label": "BABD"
+              },
+              {
+                "label": "BABE"
+              },
+              {
+                "label": "BABF"
+              }
+            ]
+          },
+          {
+            "label": "BAC"
+          },
+          {
+            "label": "BAD"
+          },
+          {
+            "label": "BAE"
+          },
+          {
+            "label": "BAF"
+          }
+        ]
+      },
+      {
+        "label": "BB"
+      },
+      {
+        "label": "BC"
+      },
+      {
+        "label": "BD"
+      },
+      {
+        "label": "BE"
+      },
+      {
+        "label": "BF"
+      }
+    ]
+  }
+]

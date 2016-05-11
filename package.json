@@ -1,0 +1,32 @@
+{
+  "name": "el-cascader",
+  "version": "0.0.0",
+  "description": "A cascader component for Vue.",
+  "keywords": [
+    "element",
+    "vue",
+    "component"
+  ],
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "element-toolbox watch",
+    "dist": "element-toolbox build",
+    "test": "element-toolbox test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/element-component/el-cascader.git"
+  },
+  "homepage": "https://github.com/element-component/el-cascader#readme",
+  "bugs": {
+    "url": "https://github.com/element-component/el-cascader/issues"
+  },
+  "author": "qingwei-li<qingwei.li@ele.me>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "el-input": "^0.1.1",
+    "object-equal": "^1.0.0",
+    "vue-clickoutside": "0.0.4"
+  }
+}
