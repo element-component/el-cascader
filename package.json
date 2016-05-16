@@ -1,6 +1,6 @@
 {
   "name": "el-cascader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A cascader component for Vue.",
   "keywords": [
     "element",
