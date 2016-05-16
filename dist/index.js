@@ -6,7 +6,7 @@
 	else if(typeof exports === 'object')
 		exports["ElCascader"] = factory(require("vue-clickoutside"));
 	else
-		root["ElCascader"] = factory(root["vue-clickoutside"]);
+		root["ElCascader"] = factory(root["VueClickoutside"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_16__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -72,25 +72,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1 */
 /***/ function(module, exports) {
 
-	module.exports = "<div block=element-core-input :class=\"{\n    'is-disabled': disabled,\n    'is-readonly': readonly,\n    'is-multiple': multiple\n  }\"> <template v-if=multiple> <el-core-tag @remove=tags.$remove(tag) v-for=\"tag in tags\" :data=tag> </el-core-tag> </template> <input elem=original v-el:input v-model=model :type=\"type || 'text'\" :disabled=disabled :readonly=readonly :placeholder=placeholder :number=\"type === 'number'\" @blur=\"$dispatch('e-blur')\" @focus=handleFocus @keydown.down.prevent=\"$dispatch('e-press-down')\" @keydown.up.prevent=\"$dispatch('e-press-up')\" @keyup.enter=\"$dispatch('e-press-enter')\" @keydown.8=handleDelete @keydown.esc=\"$dispatch('e-press-esc')\"> <slot name=icon></slot> </div>";
+	module.exports = "<div :class=\"{\n    'is-disabled': disabled,\n    'is-readonly': readonly,\n    'is-multiple': multiple\n  }\" class=element-core-input> <template v-if=multiple> <el-core-tag @remove=tags.$remove(tag) v-for=\"tag in tags\" :data=tag> </el-core-tag> </template> <input v-el:input=\"\" v-model=model :type=\"type || 'text'\" :disabled=disabled :readonly=readonly :placeholder=placeholder :number=\"type === 'number'\" @blur=\"$dispatch('e-blur')\" @focus=handleFocus @keydown.down.prevent=\"$dispatch('e-press-down')\" @keydown.up.prevent=\"$dispatch('e-press-up')\" @keyup.enter=\"$dispatch('e-press-enter')\" @keydown.8=handleDelete @keydown.esc=\"$dispatch('e-press-esc')\" class=element-core-input__original> <slot name=icon></slot> </div>";
 
 /***/ },
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = "<button block=element-core-tag> <span v-text=data></span> <span elem=button v-if=_events.remove @click.stop=\"$dispatch('remove')\">&times;</span> </button>";
+	module.exports = "<button class=element-core-tag> <span v-text=data></span> <span v-if=_events.remove @click.stop=\"$dispatch('remove')\" class=element-core-tag__button>&times;</span> </button>";
 
 /***/ },
 /* 3 */
 /***/ function(module, exports) {
 
-	module.exports = "<div block=element-cascader v-element-clickoutside=\"show = false\"> <el-input readonly=readonly :model.sync=model @click=\"show = !show\" :placeholder=placeholder> </el-input> <div v-show=show elem=dropdown> <div elem=wrap> <el-dropdown elem=menu v-ref:dropdown :model.sync=model :data=list :index=$index trigger=hover v-for=\"list in data\" @change=handleSelected> </el-dropdown> </div> </div> <slot></slot> </div>";
+	module.exports = "<div v-element-clickoutside=\"show = false\" class=element-cascader> <el-input readonly=\"\" :model.sync=model @click=\"show = !show\" :placeholder=placeholder> </el-input> <div v-show=show class=element-cascader__dropdown> <div class=element-cascader__wrap> <el-dropdown v-ref:dropdown=\"\" :model.sync=model :data=list :index=$index trigger=hover v-for=\"list in data\" @change=handleSelected class=element-cascader__menu> </el-dropdown> </div> </div> <slot></slot> </div>";
 
 /***/ },
 /* 4 */
 /***/ function(module, exports) {
 
-	module.exports = "<div block=element-dropdown> <ul elem=list> <li v-for=\"item in data\" block=element-option class=element-option--arrow :class=\"{\n        'is-disabled': item.disabled,\n        'is-selected': cache.pid === index && cache.id === $index,\n        'is-last': !item.hasOwnProperty('submenu')\n      }\" @click=\"handleSelected('click', item, index, $index)\" @mouseover=\"handleSelected('hover', item, index, $index)\"> <span v-text=item.label></span> </li> </ul> </div>";
+	module.exports = "<div class=element-dropdown> <ul class=element-dropdown__list> <li v-for=\"item in data\" class=\"element-option element-option--arrow\" :class=\"{\n        'is-disabled': item.disabled,\n        'is-selected': cache.pid === index && cache.id === $index,\n        'is-last': !item.hasOwnProperty('submenu')\n      }\" @click=\"handleSelected('click', item, index, $index)\" @mouseover=\"handleSelected('hover', item, index, $index)\"> <span v-text=item.label></span> </li> </ul> </div>";
 
 /***/ },
 /* 5 */

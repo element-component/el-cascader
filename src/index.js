@@ -9,4 +9,3 @@ module.exports = {
     Vue.component(ElMenu.name, ElMenu);
   }
 };
-
